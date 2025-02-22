@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import { Notification } from "./notification.js";
 import { input_value_slice } from "./input_value_slice.js";
 import { input_phone_value_slice } from "./input_phone_value_slice.js";
@@ -25,7 +22,7 @@ document.getElementById("form").addEventListener("submit", async function (event
 		return;
 	}
 	try {
-		let response = await fetch(`${process.env.URL}${process.env._8564}`, {
+		let response = await fetch("https://bms-1-txum.onrender.com/sign", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({

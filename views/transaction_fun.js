@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import { local_storage_ac_no } from "./local_storage_value.js";
 import { Notification } from "./notification.js";
 let value_ = 0;
@@ -13,7 +10,7 @@ export async function balance_fun(ac_no0, amount_, value, cheque_value, change, 
 	} else {
 		value_ = 1;
 	}
-	const response1 = await fetch(`${process.env.URL}${process.env._1311}`, {
+	const response1 = await fetch("https://bms-1-txum.onrender.com/balance", {
 		method: "GET",
 		headers: { "Content-Type": "application/json" },
 	});
@@ -98,7 +95,7 @@ export async function balance_fun(ac_no0, amount_, value, cheque_value, change, 
 
 //-----------------transaction function for update realtime User balance------------------------------------------------------- 
 async function transaction(balance, deposit_form_ac_no, method, credit, debit, atm_message_value) {
-	const response = await fetch(`${process.env.URL}${process.env._3231}`, {
+	const response = await fetch("https://bms-1-txum.onrender.com/transaction", {
 		method: "PUT",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ balance, deposit_form_ac_no })
@@ -128,7 +125,7 @@ async function History(transaction_method, credit, debit, balance, account_numbe
 			console.error("missing");
 			return;
 		}
-		const response = await fetch(`${process.env.URL}${process.env._0141}`, {
+		const response = await fetch("https://bms-1-txum.onrender.com/history", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ date_time, transaction_method, credit, debit, balance, account_number })

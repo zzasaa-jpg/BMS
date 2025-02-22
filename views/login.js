@@ -1,6 +1,5 @@
-import * as dotenv from 'dotenv';
+import dotenv from 'dotenv';
 dotenv.config();
-
 
 import { local_storage_id } from "./local_storage_value.js";
 import { local_storage_ac_no } from "./local_storage_value.js";

@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { Notification } from "./notification.js";
 import { input_value_slice } from "./input_value_slice.js";
 import { input_phone_value_slice } from "./input_phone_value_slice.js";

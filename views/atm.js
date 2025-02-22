@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
 //----import the some function form js files-----------------------
 import { balance_fun } from "./transaction_fun.js";
 import { debit_card_generate } from "./debit_card_generate_number.js";

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+#Deposit_slip {
+	display: block;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px;
+}
+
+#With_drawal_slip {
+	display: none;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px;
+}
+
+#cheque {
+	display: none;
+	border: 1px solid black;
+	padding: 5px;
+	margin: 10px;
+}
+
+#generate_number {
+	font-family: "Caveat", serif;
+}
+
+#deposit_button,
+#withdrawal_button,
+#cheque_button,
+#submit_deposit_slip,
+#submit_withdrawal_slip,
+#submit_cheque,
+#form_clear {
+	font-size: 15px;
+	background-color: transparent;
+	border: 2px solid #0073E6;
+	padding: 3px;
+	color: #0073E6;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+#deposit_form {
+	display: flex;
+	flex-direction: column;
+}
+
+#first_div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+#first_div>input {
+	width: 75%;
+	font-size: 15px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	outline: none;
+}
+
+#first_div>label {
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+#submit_deposit_slip {
+	width: fit-content;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#withdrawal_slip {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#withdrawal_slip>input {
+	width: 75%;
+	font-size: 15px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	outline: none;
+}
+
+#withdrawal_slip>label {
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+#submit_withdrawal_slip {
+	width: fit-content;
+	margin-top: 10px;
+}
+
+/* ------------------------------------------------------------------------- */
+#cheque_form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#cheque_form>input {
+	width: 75%;
+	font-size: 15px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	outline: none;
+}
+
+#cheque_form>label {
+	font-size: 15px;
+	margin-top: 15px;
+}
+
+#submit_cheque {
+	width: fit-content;
+	margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	#first_div>input,
+	#withdrawal_slip>input,
+	#cheque_form>input {
+		width: 100%;
+	}
+}

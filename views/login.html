@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Login</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="login.css">
+</head>
+
+<body id="body">
+	<div id="top_section">
+		<a href="signin">signin</a>
+		<a href="/">home</a>
+		<h1>Login</h1>
+		<p>Welcome to Fake Bank Login page. You have an account than login, eigther does n't account than create a new
+			account.</p>
+		<button id="form_clear">Clear Form</button>
+	</div>
+	<section id="login_section">
+		<form id="form">
+			<label for="ac_no" id="label_for_account_number">Enter the Accouunt Number</label>
+			<input id="ac_no" type="number" required />
+			<label for="password" id="label_for_password">Enter your password</label>
+			<input id="password" type="password" required />
+			<button type="submit" id="submit"> Login</button>
+		</form>
+	</section>
+
+	<section id="dashboard_section">
+		<div id="side_menu_div">
+			<div id="side_menu">
+				<a href="/"><ion-icon name="home-outline"></ion-icon></a>
+				<a href="atm"><ion-icon name="cash-outline"></ion-icon></a>
+				<a href="debit_card"><ion-icon name="card-outline"></ion-icon></a>
+				<a href="passbook"><ion-icon name="book-outline"></ion-icon></a>
+				<a href="slip"><ion-icon name="bookmarks-outline"></ion-icon></a>
+				<button id="logout"><ion-icon name="log-out-outline"></ion-icon></button>
+				<button id="profile"><ion-icon name="person-outline"></ion-icon></button>
+			</div>
+		</div>
+		<div id="user_info"></div>
+
+		<!-- history -->
+		<div id="table_container">
+			<table>
+				<thead>
+					<th>Date & Time</th>
+					<th>Method</th>
+					<th>Credit</th>
+					<th>Debit</th>
+					<th>Balance</th>
+				</thead>
+				<tbody id="table_body">
+					<tr></tr>
+				</tbody>
+
+			</table>
+		</div>
+	</section>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+	<script type="module" src="/login.js"></script>
+	<script type="module" src="/login_script.js"></script>
+</body>
+
+</html>

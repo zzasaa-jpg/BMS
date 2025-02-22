@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> ATM </title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="atm.css" />
+</head>
+
+<body class="body">
+	<a id="link_to_go_back" href="login">Dash Board</a>
+	<div id="card_body">
+		<div id="ring">
+			<div id="ring-5"></div>
+		</div>
+		<div id="ring-1"></div>
+		<div id="ring-2"></div>
+		<div id="ring-3">
+			<div id="ring-6"></div>
+		</div>
+		<div id="ring-4"></div>
+		<div id="ring-7">
+			<div id="ring-8"></div>
+		</div>
+		<div id="ring-9">
+			<div id="ring-10"></div>
+		</div>
+
+		<div id="chip"></div>
+		<h1 id="bank_title">Fake Bank</h1>
+		<h4 id="card_type">Debit Card</h4>
+		<h6 id="made_date">made: 01/25</h6>
+		<h6 id="expiry_date">expiry: 01/25</h6>
+		<h3 id="random_number-1">11122121212</h3>
+		<h3 id="random_number-2">11122121212</h3>
+		<h3 id="random_number-3">11122121212</h3>
+		<h3 id="random_number-4">11122121212</h3>
+	</div>
+
+	<button id="card_btn">Debit Card</button>
+	<!-- ###################################################################### -->
+	<section id="atm_body">
+		<section id="atm_display">
+			<h1 id="welcome_message">Welcome to Fake Bank ATM</h1>
+			<button id="Use_ATM_btn">USE ATM</button>
+
+			<button id="re_use_atm_btn">Re Use ATM</button>
+
+			<button id="no_thanks_btn">No thanks</button>
+
+			<h1 id="error_message">Error message</h1>
+			<h1 id="success_message">success message</h1>
+
+			<h1 id="message_for_insert_the_card">Insert the ATM Card</h1>
+
+			<form id="pin_enter_form">
+				<input type="password" id="atm_card_password" placeholder="Enter the PIN" />
+				<button type="submit" id="submit_pin">ok</button>
+			</form>
+
+			<button id="withdrawal">Withdrawal</button>
+			<form id="atm_withdrawal_form">
+				<label id="withdrawal_form_label" for="atm_amount_for_withdrawal">Enter the amount</label>
+				<input type="number" id="atm_amount_for_withdrawal" placeholder="Enter the amount" required />
+				<button type="submit">ok</button>
+			</form>
+
+			<button id="deposit">Deposit with cash</button>
+			<form id="atm_deposit_form">
+				<label id="account_number_enter_h1" for="atm_amount_for_deposit">Enter the account number</label>
+				<input type="number" id="atm_account_number_for_deposit" placeholder="Enter the account number" />
+				<button type="button" id="change_account_number_in_ATM_deposit_form">Change Account Number</button>
+				<input type="number" id="atm_amount_for_deposit" placeholder="Enter the amount" required />
+				<button type="submit" id="continue_btn">Continue</button>
+			</form>
+
+			<button id="balance">Balance</button>
+			<div id="balance_info">
+				<h1 id="atm_balance"></h1>
+			</div>
+
+			<button id="pin_change">Pin Change</button>
+			<form id="atm_pin_change_form">
+				<input type="password" id="atm_password_current" placeholder="Enter the Current PIN" required />
+				<input type="password" id="atm_password_new" placeholder="Enter the NEW PIN" required />
+				<input type="password" id="atm_re_enter" placeholder="Re-enter the PIN" required />
+				<button type="submit">Pin Change</button>
+			</form>
+			<button id="pin_generate">Pin Generate</button>
+			<form id="atm_pin_generate_form">
+				<input type="password" id="atm_new_password_generate" placeholder="Enter new PIN" required />
+				<input type="password" id="atm_re_enter_new_password_generate" placeholder="Re-enter the PIN"
+					required />
+				<button type="submit">Process</button>
+			</form>
+		</section>
+		<section id="btn_card_receipt">
+			<div id="left_section">
+				<button id="stop_atm">Stop the ATM</button>
+				<button id="cancel">CANCEL</button>
+			</div>
+			<div id="right_section">
+				<div id="card_indicater_div">
+					<p>Card Insert</p>
+					<div id="card_indicater"></div>
+				</div>
+				<div id="card_insert_section"></div>
+				<p>Receipt</P>
+				<div id="receipt_section"></div>
+			</div>
+		</section>
+	</section>
+	<section id="receipt">
+		<div id="top_section_receipt">
+			<h1 id="receipt_title">Fake Bank</h1>
+			<h4 id="receipt_date"></h4>
+		</div>
+		<h4 id="receipt_account_number"></h4>
+		<hr />
+		<table>
+			<thead>
+				<th>Date & Time</th>
+				<th>Info</th>
+				<th>Balance</th>
+			</thead>
+			<tbody id="receipt_table_body"></tbody>
+		</table>
+	</section>
+	<h3 id="count"></h3>
+
+	<script type="module" src="atm.js"></script>
+</body>
+
+</html>

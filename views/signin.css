@@ -1,0 +1,139 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	margin-top: 42px;
+	overflow: hidden;
+}
+
+#top_section {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+#form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 800px;
+	background-color: #0073E6;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	position: relative;
+}
+
+#label_for_name,
+#label_for_mail,
+#label_for_aadhar_number,
+#label_for_phone_number {
+	position: absolute;
+	top: 51px;
+	width: 60%;
+	font-size: 20px;
+	padding: 10px;
+	color: white;
+	transition: transform 500ms ease-in;
+}
+
+
+#form>input {
+	font-size: 20px;
+	margin-top: 50px;
+	background-color: transparent;
+	outline: none;
+	border: 1px solid white;
+	padding: 10px;
+	border-radius: 5px;
+	color: white;
+	width: 60%;
+}
+
+#label_for_mail {
+	margin-top: 94px;
+}
+
+#label_for_aadhar_number {
+	margin-top: 188px;
+}
+
+#label_for_phone_number {
+	margin-top: 282px;
+}
+
+#submit {
+	font-size: 20px;
+	background-color: #0073E6;
+	border: 2px solid white;
+	padding: 3px;
+	color: white;
+	margin: 10px 0;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+#form_clear {
+	font-size: 15px;
+	background-color: transparent;
+	border: 2px solid #0073E6;
+	padding: 3px;
+	color: #0073E6;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		flex-direction: column;
+		margin-top: auto;
+		gap: 30px;
+		padding: 10px;
+		height: auto;
+	}
+
+	#top_section {
+		position: static;
+	}
+
+	#form {
+		margin: 5px;
+		padding: 10px;
+		display: block;
+		width: -webkit-fill-available;
+	}
+
+	#label_for_name,
+	#label_for_mail,
+	#label_for_aadhar_number,
+	#label_for_phone_number {
+		width: -webkit-fill-available;
+		top: 45px;
+		left: 10px;
+	}
+
+	#form>input {
+		width: -webkit-fill-available;
+		margin-top: 35px;
+
+	}
+
+	#label_for_mail {
+		margin-top: 80px;
+	}
+
+	#label_for_aadhar_number {
+		margin-top: 158px;
+	}
+
+	#label_for_phone_number {
+		margin-top: 237px;
+	}
+}

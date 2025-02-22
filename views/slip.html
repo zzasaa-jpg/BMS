@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> Slip </title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="slip.css">
+</head>
+
+<body>
+	<a id="link_to_go_back" href="login">Dash Board</a>
+	<h1>Slip</h1>
+	<button id="deposit_button">Deposit slip</button>
+	<button id="withdrawal_button">With Drawal slip</button>
+	<button id="cheque_button">cheque</button>
+	<button id="form_clear">Clear Form</button>
+	<section id="Deposit_slip">
+		<form id="deposit_form">
+			<div id="first_div">
+				<h1 id="bank_title">Fake Bank</h1>
+				<label for="deposit_form_date">Date</label>
+				<input type="date" id="deposit_form_date" required />
+				<label for="deposit_form_branch">Branch</label>
+				<input type="text" id="deposit_form_branch" required />
+				<label for="deposit_form_ac_no">Enter account number</label>
+				<input type="number" id="deposit_form_ac_no" required />
+				<label for="deposit_form_name">Enter the name</label>
+				<input type="text" id="deposit_form_name" required />
+				<label for="deposit_form_phone_no">Enter the phone number</label>
+				<input type="number" id="deposit_form_phone_no" required />
+				<label for="deposit_form_amount">Enter the amount</label>
+				<input type="number" id="deposit_form_amount" required />
+				<label for="amount_paisa">Enter the paisa</label>
+				<input type="number" id="amount_paisa" min="0" max="0.999" step="0.001" required />
+				<label for="amount_in_words">Enter the amount in words</label>
+				<input type="text" id="amount_in_words" required />
+			</div>
+			<button id="submit_deposit_slip">Submit</button>
+		</form>
+
+	</section>
+	<!--#################################################################################################-->
+	<section id="With_drawal_slip">
+		<form id="withdrawal_slip">
+			<h1 id="bank_name">Fake Bank</h1>
+			<label for="withdrawal_slip_date">Enter the Date</label>
+			<input type="date" id="withdrawal_slip_date" required />
+			<label for="withdrawal_slip_ac_no">Enter the Account Number</label>
+			<input type="number" id="withdrawal_slip_ac_no" required />
+			<label for="withdrawal_slip_branch">Emter the Branch</label>
+			<input type="text" id="withdrawal_slip_branch" required />
+			<label for="withdrawal_slip_amount_in_word">Emter the amount in Word</label>
+			<input type="text" id="withdrawal_slip_amount_in_word" required />
+			<label for="withdrawal_slip_amount">Amount</label>
+			<input type="number" id="withdrawal_slip_amount" required />
+			<label for="withdrawal_signature">Signature</label>
+			<input type="text" id="withdrawal_signature" required />
+			<label for="withdrawal_name">Account holder Name</label>
+			<input type="text" id="withdrawal_name" required />
+			<button id="submit_withdrawal_slip">Submit</button>
+		</form>
+	</section>
+
+	<!--#################################################################################################-->
+
+	<section id="cheque">
+		<form id="cheque_form">
+			<h1 id="bank_name">Fake Bank</h1>
+			<label for="cheque_date">Enter the date</label>
+			<input type="date" id="cheque_date" required />
+			<label for="cheque_pay">Enter Pay Details</label>
+			<input type="text" id="cheque_pay" required />
+			<label for="cheque_amount_in_words">Enter Rupees in word</label>
+			<input type="text" id="cheque_amount_in_words" required />
+			<label for="cheque_amount">Enter the Amount</label>
+			<input type="number" id="cheque_amount" required />
+			<label for="cheque_ac_no">Enter the Accouunt Number</label>
+			<input type="number" id="cheque_ac_no" required />
+			<label for="cheque_signature">Cheque Signature</label>
+			<input type="text" id="cheque_signature" required />
+			<p id="generate_number"></p>
+			<button id="submit_cheque"> Submit</button>
+		</form>
+	</section>
+	<script src="slip.js" type="module"></script>
+	<script src="slip_script.js" type="module"></script>
+</body>
+
+</html>

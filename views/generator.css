@@ -1,0 +1,20 @@
+#copy_ac,
+#copy_password {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+#password_btn,
+#ac_btn {
+	font-size: 20px;
+	background-color: transparent;
+	border: 2px solid #0073E6;
+	padding: 3px;
+	color: #0073E6;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}

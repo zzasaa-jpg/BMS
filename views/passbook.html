@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title> PassBook </title>
+	<link rel="stylesheet" href="main.css" />
+	<link rel="stylesheet" href="passbook.css" />
+</head>
+
+<body>
+	<a id="link_to_go_back" href="login">Dash Board</a>
+	<h1>PassBook</h1>
+	<section id="passbook_body"></section>
+	<section id="transaction_info">
+		<table border="1">
+			<thead>
+				<tr>
+					<th>Date & Time</th>
+					<th>Method</th>
+					<th>Credit</th>
+					<th>Debit</th>
+					<th>Balance</th>
+				</tr>
+			<tbody id="table_body">
+				<tr></tr>
+			</tbody>
+
+			</thead>
+		</table>
+	</section>
+	<div id="passbook_btns">
+		<button id="previous">previous</button>
+		<button id="next">next</button>
+	</div>
+	<script src="passbook.js" type="module"></script>
+</body>
+
+</html>

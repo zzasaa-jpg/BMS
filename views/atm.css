@@ -1,0 +1,408 @@
+body {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	overflow: hidden;
+	height: 100vh;
+}
+
+#card_body {
+	display: none;
+	width: 85.6mm;
+	height: 53.98mm;
+	border: 1px solid rgb(206, 206, 206);
+	border-radius: 3.18mm;
+	position: relative;
+	overflow: hidden;
+	background-color: #000;
+	color: #fff;
+	box-shadow: 1px 1px 5px 1px black;
+}
+
+#chip {
+	width: 15mm;
+	height: 12mm;
+	border: 1px solid white;
+	border-radius: 2.18mm;
+	position: absolute;
+	left: 40px;
+	top: 65px;
+	background-image: url("http://localhost:3000/chip.jpg");
+	background-size: 112px;
+	background-position: center;
+}
+
+#bank_title {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+#card_type {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#made_date {
+	position: absolute;
+	bottom: 10px;
+	left: 20px;
+}
+
+#expiry_date {
+	position: absolute;
+	bottom: 10px;
+	left: 100px
+}
+
+#random_number-1 {
+	position: absolute;
+	bottom: 45px;
+	left: 50px;
+	color: black;
+}
+
+#random_number-2 {
+	position: absolute;
+	bottom: 45px;
+	left: 100px;
+}
+
+#random_number-3 {
+	position: absolute;
+	bottom: 45px;
+	left: 150px;
+}
+
+#random_number-4 {
+	position: absolute;
+	bottom: 45px;
+	left: 200px;
+}
+
+#ring {
+	width: 150px;
+	height: 150px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 21%;
+	right: -75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ring-1 {
+	width: 70px;
+	height: 70px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: -30%;
+	right: 10%;
+}
+
+#ring-2 {
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 57%;
+	right: 70%;
+}
+
+#ring-3 {
+	width: 67px;
+	height: 67px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 33%;
+	right: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ring-4 {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 96%;
+	right: 30%;
+}
+
+#ring-5 {
+	width: 135px;
+	height: 135px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#ring-6 {
+	width: 57px;
+	height: 57px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#ring-7 {
+	width: 87px;
+	height: 87px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	top: 15%;
+	left: -10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ring-8 {
+	width: 77px;
+	height: 77px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#ring-9 {
+	width: 20px;
+	height: 20px;
+	background-color: white;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -7px;
+	left: -7px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#ring-10 {
+	width: 14px;
+	height: 14px;
+	background-color: black;
+	border-radius: 50%;
+}
+
+#card_btn {
+	display: none;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+}
+
+#atm_body {
+	height: 100vh;
+	width: 60vw;
+	border: 2px solid #0073E6;
+	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	background-color: #eaeaea;
+	box-shadow: 1px 1px 5px 1px black;
+}
+
+#atm_display {
+	height: 65vh;
+	width: 90%;
+	border: 2px solid #0073E6;
+	margin-top: 40px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	background-color: #fff;
+	gap: 5px;
+}
+
+#btn_card_receipt {
+	height: 15vh;
+	width: 90%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#right_section {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#card_insert_section {
+	height: 5px;
+	width: 53.98mm;
+	border: 1px solid #0073E6;
+}
+
+#receipt_section {
+	height: 5px;
+	width: 53.98mm;
+	border: 1px solid #0073E6;
+}
+
+#re_use_atm_btn,
+#error_message,
+#no_thanks_btn,
+#success_message,
+#withdrawal,
+#deposit,
+#atm_deposit_form,
+#atm_withdrawal_form,
+#message_for_insert_the_card,
+#balance_info,
+#balance,
+#pin_change,
+#atm_pin_change_form,
+#pin_generate,
+#atm_pin_generate_form,
+#pin_enter_form,
+#receipt,
+#count {
+	display: none;
+	font-size: xx-large;
+}
+
+#welcome_message {
+	font-size: xx-large;
+	margin-bottom: 10px;
+}
+
+#atm_account_number_for_deposit {
+	display: none;
+}
+
+#card_indicater_div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#card_indicater {
+	height: 15px;
+	width: 30px;
+	border: 1px solid #0073E6;
+	background-color: transparent;
+}
+
+#receipt {
+	border: 1px solid #cecece;
+	height: 470px;
+	width: 300px;
+	font-size: 20px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px 1px black;
+}
+
+table {
+	width: -webkit-fill-available;
+}
+
+th {
+	font-size: 15px;
+}
+
+td {
+	font-size: 10px;
+	text-align: center;
+}
+
+hr {
+	margin: 5px 0 5px 0;
+}
+
+#top_section_receipt {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+#receipt_date,
+#receipt_account_number {
+	font-size: 15px;
+}
+
+#receipt_title {
+	font-size: 25px;
+}
+
+#count {
+	position: absolute;
+	top: 0;
+	right: 10px;
+}
+
+button {
+	font-size: 15px;
+	background-color: transparent;
+	border: 2px solid #0073E6;
+	padding: 3px;
+	color: #0073E6;
+	border-radius: 5px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+#atm_withdrawal_form>input,
+#atm_deposit_form>input,
+#atm_pin_change_form>input,
+#atm_pin_generate_form>input,
+#pin_enter_form>input {
+	width: 75%;
+	font-size: 15px;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	padding: 5px;
+	outline: none;
+}
+
+#re_use_atm_btn,
+#no_thanks_btn {
+	font-size: 15px;
+}
+
+#link_to_go_back {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+	body {
+		display: block;
+	}
+
+	#card_btn {
+		top: 10px;
+		left: 100px;
+	}
+
+	#atm_body {
+		width: auto;
+		border-top-left-radius: 15px;
+		border-top-right-radius: 15px;
+	}
+
+	#atm_display {
+		height: 40vh;
+		border-radius: 10px;
+	}
+}

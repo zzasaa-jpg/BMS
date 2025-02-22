@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charaset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>signin</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="signin.css">
+</head>
+
+<body>
+	<div id="top_section">
+		<a href="login">login</a>
+		<a href="/">home</a>
+		<h1>Signin</h1>
+		<p>Welcome to Fake Bank signin page. Create new account after than move automaticaly to generate page. There new
+			Account number and password generated. And don't forget it Account number and password.</p>
+		<button id="form_clear">Clear Form</button>
+	</div>
+	<form id="form" s>
+		<label for="name" id="label_for_name">Enter your name</label>
+		<input type="text" id="name" required />
+
+		<label for="mail" id="label_for_mail">Enter your E-mail</label>
+		<input type="email" id="mail" required />
+
+		<label for="adhar_number" id="label_for_aadhar_number">Enter your Aadhar number</label>
+		<input type="number" id="adhar_number" maxlength=12 required />
+
+		<label for="phone_number" id="label_for_phone_number">Enter your phone number</label>
+		<input type="number" id="phone_number" required maxlength="10" />
+		<button type="submit" id="submit">Signin</button>
+	</form>
+	<script type="module" src="signin.js"></script>
+	<script src="signin_script.js"></script>
+</body>
+
+</html>

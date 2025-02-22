@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import { local_storage_id } from "./local_storage_value.js";
 import { local_storage_ac_no } from "./local_storage_value.js";
 import { Notification } from "./notification.js";
@@ -47,7 +44,7 @@ logout_button.addEventListener("click", function () {
 async function DOM_login_check() {
 	try {
 		let id = local_storage_id();
-		const response = await fetch(`${process.env.URL}${process.env._2232}`, {
+		const response = await fetch("https://bms-1-txum.onrender.com/DOM_login_check", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ id })
@@ -102,7 +99,7 @@ form.addEventListener("submit", async function (event) {
 	let ac_no_value = ac_no.value;
 	let password_value = password.value;
 	try {
-		const response = await fetch(`${process.env.URL}${process.env._7335}`, {
+		const response = await fetch("https://bms-1-txum.onrender.com/in", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({ ac_no_value, password_value })
@@ -157,7 +154,7 @@ form.addEventListener("submit", async function (event) {
 
 //change the value for login in DB---------------------------------------
 async function loginTrue_PUT(id1, login_value) {
-	const response2 = await fetch(`${process.env.URL}${process.env._1414}`, {
+	const response2 = await fetch("https://bms-1-txum.onrender.com/loginTrue", {
 		method: "PUT",
 		headers: { "Content-Type": "application/json" },
 		body: JSON.stringify({ id1, login_value })
@@ -177,7 +174,7 @@ async function history() {
 	let table_container = document.getElementById("table_container");
 	try {
 
-		const response = await fetch(`${process.env.URL}${process.env._1311}`, {
+		const response = await fetch("https://bms-1-txum.onrender.com/balance", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});

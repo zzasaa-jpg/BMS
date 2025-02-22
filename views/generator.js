@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import { Notification } from "./notification.js";
 //------------------generating the New user account number and password------------------------
 let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
@@ -18,7 +15,7 @@ async function get_users() {
 	let ac_no_ = ac.join("");
 	let password_ = password.join("");
 	try {
-		const response = await fetch(`${process.env.URL}${process.env._4123}`);
+		const response = await fetch("https://bms-1-txum.onrender.com/All_User");
 		if (response.ok) {
 			let data = await response.json();
 			ac_H1.innerText = ac_no_;
@@ -27,7 +24,7 @@ async function get_users() {
 				consolo.warn("no users found in the database");
 				return;
 			}
-			const response1 = await fetch(`${process.env.URL}${process.env._5202}`, {
+			const response1 = await fetch("https://bms-1-txum.onrender.com/generator", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ id: data[data.length - 1]._id, ac_no: ac_no_, password_value: password_ })

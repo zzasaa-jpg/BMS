@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 //---------------------------------User passbook details show-----------------------------
 import { local_storage_ac_no } from "./local_storage_value.js";
 let passbook = document.getElementById("passbook_body");
@@ -72,7 +69,7 @@ function render(section_) {
 //---------------------------User details show--------------------------------------------
 async function details() {
 	try {
-		const response = await fetch(`${process.env.URL}${process.env._1311}`, {
+		const response = await fetch("https://bms-1-txum.onrender.com/balance", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});
@@ -117,7 +114,7 @@ details();
 //--------------------------finding the login user----------------------------------------------
 async function users() {
 	try {
-		const response = await fetch(`${process.env.URL}${process.env._4123}`,{
+		const response = await fetch("https://bms-1-txum.onrender.com/All_User",{
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});

@@ -1,6 +1,3 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 //----import the some function form js files-----------------------
 import { balance_fun } from "./transaction_fun.js";
 import { debit_card_generate } from "./debit_card_generate_number.js";
@@ -231,7 +228,7 @@ document.getElementById("atm_deposit_form").addEventListener("submit", async fun
 
 //--------------------------User Account balance checking--------------------------------------------------------
 balance.addEventListener("click", async function () {
-	const response = await fetch(`${process.env.URL}${process.env._1311}`, {
+	const response = await fetch("https://bms-1-txum.onrender.com/balance", {
 		method: "GET",
 		headers: { "Content-Type": "application/json" }
 	});

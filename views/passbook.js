@@ -1,3 +1,4 @@
+require('dotenv').config();
 //---------------------------------User passbook details show-----------------------------
 import { local_storage_ac_no } from "./local_storage_value.js";
 let passbook = document.getElementById("passbook_body");
@@ -69,7 +70,7 @@ function render(section_) {
 //---------------------------User details show--------------------------------------------
 async function details() {
 	try {
-		const response = await fetch("https://bms-1-txum.onrender.com/balance", {
+		const response = await fetch(`${process.env.URL}${process.env._1311}`, {
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});
@@ -114,7 +115,7 @@ details();
 //--------------------------finding the login user----------------------------------------------
 async function users() {
 	try {
-		const response = await fetch("https://bms-1-txum.onrender.com/All_User", {
+		const response = await fetch(`${process.env.URL}${process.env._4123}`,{
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});

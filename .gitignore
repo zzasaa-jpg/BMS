@@ -1,0 +1,17 @@
+# Ignore the node_modules folder (used in Node.js projects)
+node_modules/
+
+# Ignore environment files (used for storing secrets like API keys)
+.env
+
+# Ignore the File
+main.js
+index.html
+
+# Ignore Package files
+package-lock.json
+package.json
+
+#Ignore the styles
+atm.css
+debit_card.css

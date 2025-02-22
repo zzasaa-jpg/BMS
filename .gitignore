@@ -9,8 +9,8 @@ main.js
 index.html
 
 # Ignore Package files
-package-lock.json
-package.json
+#package-lock.json
+#package.json
 
 #Ignore the styles
 atm.css

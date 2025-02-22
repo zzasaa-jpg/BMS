@@ -5,10 +5,10 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 
 try {
-	mongoose.connect('mongodb://localhost:27017/db', {
+	mongoose.connect('mongodb+srv://zzsdrt354:SrQzx3GgKGM9cer@cluster0.fktok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
-	});
+	});	
 	console.log("CONNECTED TO DB");
 } catch (err) {
 	console.error("ERROR on mongoose connecting");

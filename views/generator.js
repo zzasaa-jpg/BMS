@@ -15,7 +15,7 @@ async function get_users() {
 	let ac_no_ = ac.join("");
 	let password_ = password.join("");
 	try {
-		const response = await fetch("http://localhost:3000/All_User");
+		const response = await fetch("https://bms-cqx4.onrender.com/All_User");
 		if (response.ok) {
 			let data = await response.json();
 			ac_H1.innerText = ac_no_;
@@ -24,7 +24,7 @@ async function get_users() {
 				consolo.warn("no users found in the database");
 				return;
 			}
-			const response1 = await fetch("http://localhost:3000/generator", {
+			const response1 = await fetch("https://bms-cqx4.onrender.com/generator", {
 				method: "POST",
 				headers: { "Content-Type": "application/json" },
 				body: JSON.stringify({ id: data[data.length - 1]._id, ac_no: ac_no_, password_value: password_ })

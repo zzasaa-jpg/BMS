@@ -1,4 +1,4 @@
-import dotenv from 'dotenv';
+import dotenv from 'node:dotenv';
 dotenv.config();
 
 import { local_storage_id } from "./local_storage_value.js";

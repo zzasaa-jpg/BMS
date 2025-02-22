@@ -22,7 +22,7 @@ document.getElementById("form").addEventListener("submit", async function (event
 		return;
 	}
 	try {
-		let response = await fetch("https://bms-cqx4.onrender.com/sign", {
+		let response = await fetch("https://bms-1-txum.onrender.com/sign", {
 			method: "POST",
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify({

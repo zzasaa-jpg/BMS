@@ -27,7 +27,7 @@ body {
 	position: absolute;
 	left: 40px;
 	top: 65px;
-	background-image: url("http://localhost:3000/chip.jpg");
+	background-image: url("https://bms-1-txum.onrender.com/chip.jpg");
 	background-size: 112px;
 	background-position: center;
 }

@@ -69,7 +69,7 @@ function render(section_) {
 //---------------------------User details show--------------------------------------------
 async function details() {
 	try {
-		const response = await fetch("https://bms-cqx4.onrender.com/balance", {
+		const response = await fetch("https://bms-1-txum.onrender.com/balance", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});
@@ -114,7 +114,7 @@ details();
 //--------------------------finding the login user----------------------------------------------
 async function users() {
 	try {
-		const response = await fetch("https://bms-cqx4.onrender.com/All_User", {
+		const response = await fetch("https://bms-1-txum.onrender.com/All_User", {
 			method: "GET",
 			headers: { "Content-Type": "application/json" }
 		});

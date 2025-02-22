@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
 //---------------------------------User passbook details show-----------------------------
 import { local_storage_ac_no } from "./local_storage_value.js";
 let passbook = document.getElementById("passbook_body");

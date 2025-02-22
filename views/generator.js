@@ -1,4 +1,6 @@
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
+
 import { Notification } from "./notification.js";
 //------------------generating the New user account number and password------------------------
 let a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];

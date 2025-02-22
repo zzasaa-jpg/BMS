@@ -1,8 +1,8 @@
-const http = require('http');
-const port = 3000;
-const path = require('path');
-const fs = require('fs');
-const mongoose = require('mongoose');
+import http from 'http';
+import path from 'path';
+import fs from 'fs';
+import mongoose from 'mongoose';
+
 
 try {
 	mongoose.connect('mongodb+srv://zzsdrt354:SrQzx3GgKGM9cer@cluster0.fktok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {

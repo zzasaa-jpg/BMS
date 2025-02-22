@@ -228,7 +228,7 @@ document.getElementById("atm_deposit_form").addEventListener("submit", async fun
 
 //--------------------------User Account balance checking--------------------------------------------------------
 balance.addEventListener("click", async function () {
-	const response = await fetch("https://bms-cqx4.onrender.com/balance", {
+	const response = await fetch("https://bms-1-txum.onrender.com/balance", {
 		method: "GET",
 		headers: { "Content-Type": "application/json" }
 	});

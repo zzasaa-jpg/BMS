@@ -2,7 +2,7 @@ import http from 'http';
 import path from 'path';
 import fs from 'fs';
 import mongoose from 'mongoose';
-
+const port = 3000;
 
 try {
 	mongoose.connect('mongodb+srv://zzsdrt354:SrQzx3GgKGM9cer@cluster0.fktok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {

@@ -1,13 +1,6 @@
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
-// Fix "__dirname" in ES Modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Load `.env` from the correct location
-dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 import { local_storage_id } from "./local_storage_value.js";
 import { local_storage_ac_no } from "./local_storage_value.js";

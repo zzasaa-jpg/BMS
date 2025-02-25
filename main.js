@@ -1,11 +1,12 @@
+require("dotenv").config(); 
 const http = require('http');
-const port = 3000;
+const port = process.env.PORT;
 const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose');
 
 try {
-	mongoose.connect('mongodb+srv://zzsdrt354:SrQzx3GgKGM9cer@cluster0.fktok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
+	mongoose.connect(process.env.URL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	});	
@@ -14,13 +15,6 @@ try {
 	console.error("ERROR on mongoose connecting");
 }
 //--Schema--
-const agentSchema = new mongoose.Schema({
-	name: String,
-	password: String,
-});
-
-const agent = mongoose.model('agent', agentSchema);
-
 const bank_user_Schema = new mongoose.Schema({
 	name: { type: String, required: true },
 	mail: { type: String, required: true },
@@ -472,5 +466,5 @@ async function withdrawal_fun(req, res) {
 	});
 }
 
-server.listen(3000);
+server.listen(port);
 console.log(`http://localhost:${port}`);

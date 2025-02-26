@@ -1,4 +1,4 @@
-const a = require('dotenv').config({ path: __dirname + '/.env' });
+const {} = require('dotenv').config({ path: __dirname + '/.env' });
 const http = require('http');
 const port = process.env.PORT;
 const path = require('path');

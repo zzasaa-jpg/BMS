@@ -3,7 +3,7 @@ const port = process.env.PORT;
 const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose');
-// require('dotenv').config();
+require('dotenv-flow').config(); 
 
 try {
 	mongoose.connect(process.env.URL, {

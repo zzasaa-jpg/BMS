@@ -1,9 +1,9 @@
+require('dotenv-flow').config(); 
 const http = require('http');
 const port = process.env.PORT;
 const path = require('path');
 const fs = require('fs');
 const mongoose = require('mongoose');
-require('dotenv-flow').config(); 
 
 try {
 	mongoose.connect(process.env.URL, {

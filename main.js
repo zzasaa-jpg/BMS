@@ -1,4 +1,4 @@
-// require('dotenv-flow').config(); 
+require('dotenv-flow').config();
 const http = require('http');
 const port = 3000;
 const path = require('path');
@@ -6,7 +6,7 @@ const fs = require('fs');
 const mongoose = require('mongoose');
 
 try {
-	mongoose.connect("mongodb+srv://zzsdrt354:SrQzx3GgKGM9cer@cluster0.fktok.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", {
+	mongoose.connect(process.env.URL, {
 		useNewUrlParser: true,
 		useUnifiedTopology: true,
 	});	
